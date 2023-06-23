@@ -1,7 +1,7 @@
 profile = "automacao"
 use-nat-gateway = true
 user-data-file = "wordpress_user_data.sh"
-ec2-key-pair = "automacao.pem"
+ec2-key-pair = "NOME DA SUA KEY"
 ec2-instance-type = "t2.micro"
 ec2-ebs-size = 30
 rds-username = "wpadmin"
