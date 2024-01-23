@@ -18,3 +18,8 @@ output "ec2-connect-cmd" {
 output "elb-dns" {
   value = aws_lb.general-resources-elb.dns_name
 }
+
+
+output "projeto-rds-host" {
+  value = var.use-rds ? aws_db_instance.projeto-rds[0].address : "RDS desativado"
+}

@@ -6,7 +6,9 @@ Este projeto permite criar a infraestrutura mínima na AWS para execução de in
 
 A proposta é criar todos os recursos necessários, como VPC, Subnet, Route Tables, EC2 e RDS para rodar um projeto em uma instância Ubuntu, 22.04 LTS e Windows Server. 
 
-Toda a infraestrutura será criada via Terraform.
+Toda a infraestrutura será criada via Terraform. 
+
+OBS: caso as instâncias das AMIs especificadas no variables.tf não estejam mais disponíveism, atualize com o ID das novas AMIs para cada SO.
 
 # Terraform
 

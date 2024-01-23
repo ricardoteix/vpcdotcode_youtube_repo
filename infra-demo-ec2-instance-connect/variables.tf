@@ -48,7 +48,7 @@ variable "ec2-ebs-size" {
 variable "ec2-amis" {
   description = "AMIs"
   type        = list(string)
-  default     = ["ami-053b0d53c279acc90"] 
+  default     = ["ami-053b0d53c279acc90", "ami-00d990e7e5ece7974"] 
 }
 
 variable "ec2-ami-linux" {
@@ -60,7 +60,7 @@ variable "ec2-ami-linux" {
 variable "ec2-ami-windows" {
   description = "AMI win base"
   type        = string
-  default     = "ami-04132f301c3e4f138" # Microsoft Windows Server 2022 
+  default     = "ami-00d990e7e5ece7974" # Microsoft Windows Server 2022 Base
 }
 
 variable "health_check" {
