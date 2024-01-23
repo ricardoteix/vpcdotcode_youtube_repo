@@ -113,7 +113,7 @@ resource "aws_nat_gateway" "nat-projeto" {
 resource "aws_eip" "nat-eip" {
   count = var.use_nat ? length(var.public_subnet_cidr_blocks) : 0
 
-  vpc = true
+  domain = "vpc"
 
   tags = {
     Name = "eip-${var.tags-sufix}-${count.index + 1}"

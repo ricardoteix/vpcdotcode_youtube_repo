@@ -11,6 +11,10 @@ output "ec2-acesso-secret" {
 output "ec2-connect-cmd" {
   value = [
     for instance in aws_instance.projeto :
-    "aws ec2-instance-connect ssh --instance-id ${instance.id} --profile ${var.profile} --connection-type eice --os-user ubuntu"
+    "aws ec2-instance-connect ssh --instance-id ${instance.id} --os-user ubuntu --profile ${var.profile}"
   ]
+}
+
+output "elb-dns" {
+  value = aws_lb.general-resources-elb.dns_name
 }

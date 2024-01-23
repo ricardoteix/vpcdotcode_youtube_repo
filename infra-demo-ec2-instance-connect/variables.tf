@@ -48,7 +48,7 @@ variable "ec2-ebs-size" {
 variable "ec2-amis" {
   description = "AMIs"
   type        = list(string)
-  default     = ["ami-053b0d53c279acc90", "ami-04132f301c3e4f138"] 
+  default     = ["ami-053b0d53c279acc90"] 
 }
 
 variable "ec2-ami-linux" {
